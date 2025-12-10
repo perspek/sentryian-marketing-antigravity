@@ -1,0 +1,77 @@
+.aboutPage {
+    padding-top: var(--spacing-xl);
+}
+
+.hero {
+    text-align: center;
+    padding: var(--spacing-lg) 0;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    font-size: 3.5rem;
+    margin-bottom: var(--spacing-sm);
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* Fixes lint error/standard property */
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-text-muted);
+}
+
+.contentSection {
+    padding: var(--spacing-lg) 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+
+.contentSection.reversed {
+    direction: rtl;
+    /* simple way to flip grid order, but needs text reset */
+}
+
+.contentSection.reversed .textBlock {
+    direction: ltr;
+}
+
+.textBlock h2 {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-primary);
+}
+
+.textBlock p {
+    color: var(--color-text-muted);
+    margin-bottom: 1rem;
+}
+
+.values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.valueCard {
+    background: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-border);
+}
+
+.valueCard h3 {
+    color: var(--color-accent);
+    margin-bottom: 0.5rem;
+}
+
+.valueCard p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+}
